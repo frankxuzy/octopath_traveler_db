@@ -12,7 +12,7 @@ const app = express()
 // allow cross-origin requests
 app.use(cors())
 
-mongoose.connect(process.env.DB_HOST)
+mongoose.connect(process.env.DB_HOST, {useNewUrlParser: true})
 mongoose.connection.once('open', () => {
   // eslint-disable-next-line no-console
   console.log('connected to database')
