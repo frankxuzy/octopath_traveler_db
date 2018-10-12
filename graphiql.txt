@@ -1,0 +1,6 @@
+mutation{
+  addLocation(name: "S'warkii", scope: "Chapter1 Towns"){
+    name
+    scope
+  }
+}
